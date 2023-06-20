@@ -2,6 +2,14 @@ const express = require('express');
 const authRoutes = require('./routes/auth');
 const connectDB = require('./startup/db')
 const { logger, requestLoggerMiddleware, errorHandlingMiddleware } = require('./startup/Logger/winston');
+const config = require('config')
+
+
+if(!config.get('jwtPrivateKey')){
+  logger.error("FATAL ERROR JWT TOKEN NOT SET");
+  process.exit(1);
+}
+
 
 
 const app = express();
