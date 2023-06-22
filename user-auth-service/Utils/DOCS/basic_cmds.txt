@@ -1,0 +1,2 @@
+$env:chess_jwtPrivateKey = "12345"
+echo $env:chess_jwtPrivateKey
