@@ -2,7 +2,6 @@
   "name": "room-manager",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "dist/app.js",
   "scripts": { 
     "dev": "tsc && nodemon src/app.ts"
