@@ -2,7 +2,7 @@ const { logger } = require('../startup/Logger/winston');
 const mongoose = require('mongoose');
 
 const connectDB = async() => {
-  return mongoose.connect('mongodb://localhost/user_auth_db', {
+  return mongoose.connect('mongodb://127.0.0.1/user_auth_db', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

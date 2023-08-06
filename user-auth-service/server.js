@@ -26,7 +26,7 @@ app.use('/api/auth', authRoutes);
 // Error handling middleware
 app.use(errorHandlingMiddleware);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3200;
 
 // Database connection
 async function startServer() {
